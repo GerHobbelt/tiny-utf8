@@ -175,7 +175,7 @@ namespace tiny_utf8
 			constexpr static std::uint32_t	u4 = 1;
 			constexpr static std::uint8_t	u1 = (const std::uint8_t &) u4;
 		public:
-			constexpr static bool value = u1;
+			constexpr static bool value = !!u1;
 		};
 		
 		//! Helper to modify the last (address-wise) byte of a little endian value of type 'T'
